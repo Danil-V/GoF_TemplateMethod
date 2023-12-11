@@ -17,10 +17,8 @@ namespace TemplateMethod.TemplateMethod
     ///
     /// - ConcreteClass: подкласс, который может переопределять различные методы родительского класса.
     /// </summary>
-    public abstract class Template
-    {
-        public void TemplateMethod()
-        {
+    public abstract class Template {
+        public void TemplateMethod() {
             Operation1();
             Operation2();
         }
@@ -28,14 +26,11 @@ namespace TemplateMethod.TemplateMethod
         public abstract void Operation2();
     }
 
-    class ConcreteClass : Template // AbstractClass
-    {
-        public override void Operation1()
-        {
+    class ConcreteClass : Template /* AbstractClass */ {
+        public override void Operation1() {
         }
 
-        public override void Operation2()
-        {
+        public override void Operation2() {
         }
     }
 }
